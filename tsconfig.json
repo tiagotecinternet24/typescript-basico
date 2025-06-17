@@ -16,7 +16,10 @@
     "noEmitOnError": true,
 
     // Permite importar módulos ES também
-    "esModuleInterop": true
+    "esModuleInterop": true,
+
+    // Remove comentários da versão final JS
+    "removeComments": true
   },
 
   // Indica quais arquivos/extensões o compilador deve buscar
