@@ -19,5 +19,5 @@ function verificarOperacao(sucesso) {
     }
     return [500, "Erro inesperado no servidor"];
 }
-let resultadoDaOperacao = verificarOperacao(false);
-console.log(resultadoDaOperacao);
+let [, mensagem] = verificarOperacao(false);
+console.log(mensagem);

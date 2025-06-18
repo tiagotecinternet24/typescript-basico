@@ -29,12 +29,14 @@ console.log(produtoC);
 separador();
 
 // Usando tupla no retorno de função
-function verificarOperacao(sucesso: boolean): [number, string] {
+type StatusOperacao = [number, string];
+
+function verificarOperacao(sucesso: boolean): StatusOperacao {
   if (sucesso) {
     return [200, "Operação realizada com sucesso!"];
   }
   return [500, "Erro inesperado no servidor"];
 }
 
-let resultadoDaOperacao = verificarOperacao(false);
-console.log(resultadoDaOperacao);
+let [, mensagem] = verificarOperacao(false);
+console.log(mensagem);
