@@ -32,3 +32,21 @@ console.log(linguagens[0][0]);
 console.log(linguagens[1][0]);
 
 separador();
+
+// Mini-exercícios
+// 1) Crie um array de números
+const numeros: number[] = [10, 50, 1000, 266, 78];
+
+// 2) Calcule a soma de todos os elementos e guarde numa variável
+
+// Versão tipada implicitamente (mais concisa)
+// const total = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+
+// Versão tipada explicitamente (mais verbosa)
+const total: number = numeros.reduce(
+  (acumulador: number, numero: number): number => acumulador + numero,
+  0
+);
+
+// 3) Mostre o resultado da soma
+console.log(total);

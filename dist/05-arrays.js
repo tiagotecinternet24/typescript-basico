@@ -18,3 +18,6 @@ const linguagens = [
 console.log(linguagens[0][0]);
 console.log(linguagens[1][0]);
 (0, modulos_1.separador)();
+const numeros = [10, 50, 1000, 266, 78];
+const total = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+console.log(total);
