@@ -35,3 +35,12 @@ console.log("Situação 2:" + situacaoAluno2);
 console.log("Situação 3:" + situacaoAluno3);
 
 separador();
+
+type DiasDaSemana =
+  | "Domingo"
+  | "Segunda-feira"
+  | "Terça-feira"
+  | "Quarta-feira";
+
+const diaAtual: DiasDaSemana = "Quarta-feira";
+console.log(diaAtual);
